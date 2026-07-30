@@ -1,8 +1,44 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "e9cd54bde4867ab7e69256ea61a2efed435bdd38",
+  "sha": "baba8b6d5fbedf08bb20b658c4529c1f3df0f0fb",
   "revisions": [
+    {
+      "sha": "baba8b6d5fbedf08bb20b658c4529c1f3df0f0fb",
+      "short": "baba8b6",
+      "message": "Merge pull request #2 from danielcoons/feature/#22-SBOM",
+      "author": "Daniel Coons",
+      "date": "2026-07-30T19:39:39Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "70e5dfb7cf092e18feaf0601ba43457385bbc4bc",
+      "short": "70e5dfb",
+      "message": "updated catalog json",
+      "author": "daniel-coons",
+      "date": "2026-07-30T19:37:12Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "445ff838d243286c73b792b366e961a522c8d158",
+      "short": "445ff83",
+      "message": "added sbom workflow?",
+      "author": "daniel-coons",
+      "date": "2026-07-30T19:09:34Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "0063d90f0d44c708d5f37d05403efbcafe040d46",
+      "short": "0063d90",
+      "message": "attempt at sbom helper files",
+      "author": "daniel-coons",
+      "date": "2026-07-30T19:09:10Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "e9cd54bde4867ab7e69256ea61a2efed435bdd38",
       "short": "e9cd54b",
@@ -864,42 +900,6 @@
       "message": "Merge remote-tracking branch 'origin/main' into HEAD",
       "author": "Elijah Kerry",
       "date": "2026-07-15T20:50:24Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "a701b930a2d6e6b4a5e162839535832a3b78840c",
-      "short": "a701b93",
-      "message": "update: don't re-enable activities the repo turned off",
-      "author": "Elijah Kerry",
-      "date": "2026-07-15T15:58:22Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "07381993887c2136c1072628da0715fb5a97c4c6",
-      "short": "0738199",
-      "message": "vi-analyzer settings: warn when a .viancfg sits in the tooling-managed .github area",
-      "author": "Elijah Kerry",
-      "date": "2026-07-14T15:49:15Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "b4dc48ed204ddabbbb1a4eb802d14e4519df88b6",
-      "short": "b4dc48e",
-      "message": "vi-analyzer: don't auto-select a CI action-source config as the project default (blank-report fix)",
-      "author": "Elijah Kerry",
-      "date": "2026-07-14T15:41:29Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "32e898b12d2b3cf411865855b9dfa45afbe32791",
-      "short": "32e898b",
-      "message": "Dependencies: fix false 'update needed' from VIPM v-prefix mismatch; itemize missing deps (4.4.8)",
-      "author": "Elijah Kerry",
-      "date": "2026-07-14T15:30:07Z",
       "project": false,
       "dep_only": false
     },
