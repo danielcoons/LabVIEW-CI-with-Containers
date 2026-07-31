@@ -1,8 +1,80 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "baba8b6d5fbedf08bb20b658c4529c1f3df0f0fb",
+  "sha": "cc3ad976c36aeacc5d7d3e8651832c6cd15a48c1",
   "revisions": [
+    {
+      "sha": "cc3ad976c36aeacc5d7d3e8651832c6cd15a48c1",
+      "short": "cc3ad97",
+      "message": "Merge branch 'elijah286:main' into main",
+      "author": "Daniel Coons",
+      "date": "2026-07-31T19:48:45Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "0c4529a9f8cf9114b58a8b4367ac18618cf5e8ac",
+      "short": "0c4529a",
+      "message": "Merge branch 'feature/#22-SBOM'",
+      "author": "daniel-coons",
+      "date": "2026-07-31T19:47:59Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "b48e95d35f8e6b5de77fad4bbe81496b64d3e8ec",
+      "short": "b48e95d",
+      "message": "Merge pull request #43 from elijah286/revert-42-feature/#22-SBOM",
+      "author": "Daniel Coons",
+      "date": "2026-07-31T19:47:09Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "fb68140557282ec69eb7056aab7fc8f67a2bf0ae",
+      "short": "fb68140",
+      "message": "Revert \"Feature/#22 SBOM\"",
+      "author": "Daniel Coons",
+      "date": "2026-07-31T19:45:47Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "8128f4a967b4293a5d4edd19028662e6a54bb847",
+      "short": "8128f4a",
+      "message": "Merge pull request #42 from danielcoons/feature/#22-SBOM",
+      "author": "Daniel Coons",
+      "date": "2026-07-31T19:40:38Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "847103e9914faeafef60d7a6bf4ce76ddd3540db",
+      "short": "847103e",
+      "message": "update of high-level automation calls file naming",
+      "author": "daniel-coons",
+      "date": "2026-07-31T19:37:39Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "7830d780250129b6ac63e2bb105243b67fc59813",
+      "short": "7830d78",
+      "message": "updated sbom generation yml",
+      "author": "daniel-coons",
+      "date": "2026-07-31T18:28:57Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "c9db59e73b37d31ea9eef71e0a22cb9fffe765f6",
+      "short": "c9db59e",
+      "message": "updated scripting based on other repo integration testing",
+      "author": "daniel-coons",
+      "date": "2026-07-31T18:27:45Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "baba8b6d5fbedf08bb20b658c4529c1f3df0f0fb",
       "short": "baba8b6",
@@ -832,78 +904,6 @@
       "dep_only": false
     },
     {
-      "sha": "023c7e6ebb50bcb4cdfef117173e850628329ee9",
-      "short": "023c7e6",
-      "message": "Merge pull request #26 from elijah286/fix/deps-pending-version-mismatch",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T15:52:45Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "9f5bdf304f95ec413b5ba7a8be7e2e53b9e7986e",
-      "short": "9f5bdf3",
-      "message": "Merge origin/main into fix/deps-pending-version-mismatch",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T15:52:33Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "23c2efaa2af60a56cf9bc258d802040f7eabdec9",
-      "short": "23c2efa",
-      "message": "vipc: make committed VIPCs authoritative and sync dependency surfaces",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T15:46:11Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "381d6f37833788e7a99a0ceb1264b881e8da6a57",
-      "short": "381d6f3",
-      "message": "Add repaired Antidoc VIPC file",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T15:34:29Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "dec7497cde71bdd9b320f1bcea5667fb611447aa",
-      "short": "dec7497",
-      "message": "Create ci-tooling_repaired.vipc",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T15:27:29Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "75407454bf88c53975afff48833b72bbf14c6858",
-      "short": "7540745",
-      "message": "vi-analyzer: pre-analysis Mass Compile now excludes CI tooling (.github)",
-      "author": "Elijah Kerry",
-      "date": "2026-07-15T20:53:26Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "3c542fdee324c995acbe03d84013ed90c0e3c7b9",
-      "short": "3c542fd",
-      "message": "Merge pull request #20 from elijah286/fix/deps-pending-version-mismatch",
-      "author": "Elijah Kerry",
-      "date": "2026-07-15T20:50:59Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "eca6c35d539c2364f80cba395c371dbe146772da",
-      "short": "eca6c35",
-      "message": "Merge remote-tracking branch 'origin/main' into HEAD",
-      "author": "Elijah Kerry",
-      "date": "2026-07-15T20:50:24Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
       "sha": "00839e49ffd3f8c73e18bb4b4d67a6df69433359",
       "short": "00839e4",
       "message": "Keep example VIPC in Linux-proven artifact shape (v3.39.3)",
@@ -1085,7 +1085,7 @@
     }
   ],
   "config": {
-    "use": "",
+    "use": "latest",
     "actions": {},
     "vipc": [],
     "dragon": [],
@@ -1093,6 +1093,46 @@
     "hasDragonList": false
   },
   "vipc": [
+    {
+      "path": ".github/labview/antidoc/antidoc.vipc",
+      "role": "capability",
+      "capability": "antidoc",
+      "tooling": false,
+      "configured": true,
+      "monitored": true,
+      "monitorOn": [
+        "windows"
+      ],
+      "locked": false,
+      "packages": [
+        "graphbuilder-2.3.0.7",
+        "jki_lib_state_machine-2024.0.3.23",
+        "jki_rsc_toolkits_palette-1.1-1",
+        "wiresmith_technology_lib_g_cli-3.0.1.98",
+        "wovalab_lib_antidoc-3.3.1.879",
+        "wovalab_lib_antidoc_add_on_labview_project_documentation-3.2.0.358",
+        "wovalab_lib_antidoc_add_on_labview_toolkit_documentation-3.0.0.77",
+        "wovalab_lib_antidoc_cli-3.4.0.126",
+        "wovalab_lib_asciidoc_for_labview-1.12.1.492"
+      ],
+      "error": ""
+    },
+    {
+      "path": ".github/labview/experimental.vipc",
+      "role": "capability",
+      "capability": "",
+      "tooling": false,
+      "configured": false,
+      "monitored": true,
+      "monitorOn": [
+        "windows"
+      ],
+      "locked": false,
+      "packages": [
+        "wovalab_lib_antidoc_cli-3.3.0.117"
+      ],
+      "error": ""
+    },
     {
       "path": ".github/labview/vipm/ci-tooling.vipc",
       "role": "core",
@@ -1240,11 +1280,67 @@
     "files": [
       {
         "source_file": "example/Example.dragon",
-        "dependencies": [],
+        "labview_version": "2026",
+        "feeds": {},
+        "dependencies": [
+          {
+            "manager": "vipm",
+            "package_id": "oglib_array",
+            "declared_version": "6.0.1.20",
+            "feed_name": null,
+            "source_file": "example/Example.dragon",
+            "status": "pending",
+            "installed_version": "",
+            "message": ""
+          },
+          {
+            "manager": "vipm",
+            "package_id": "oglib_boolean",
+            "declared_version": "6.0.0.9",
+            "feed_name": null,
+            "source_file": "example/Example.dragon",
+            "status": "pending",
+            "installed_version": "",
+            "message": ""
+          }
+        ],
         "monitored": true
       }
     ],
-    "install_set": [],
+    "install_set": [
+      {
+        "manager": "vipm",
+        "package_id": "oglib_array",
+        "declared_version": "6.0.1.20",
+        "declared_versions": [
+          "6.0.1.20"
+        ],
+        "feed_name": null,
+        "source_files": [
+          "example/Example.dragon"
+        ],
+        "conflict": false,
+        "status": "pending",
+        "installed_version": "",
+        "message": ""
+      },
+      {
+        "manager": "vipm",
+        "package_id": "oglib_boolean",
+        "declared_version": "6.0.0.9",
+        "declared_versions": [
+          "6.0.0.9"
+        ],
+        "feed_name": null,
+        "source_files": [
+          "example/Example.dragon"
+        ],
+        "conflict": false,
+        "status": "pending",
+        "installed_version": "",
+        "message": ""
+      }
+    ],
     "conflicts": []
   },
   "system": [
