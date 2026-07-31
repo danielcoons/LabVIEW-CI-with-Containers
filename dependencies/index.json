@@ -1,8 +1,17 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "cc3ad976c36aeacc5d7d3e8651832c6cd15a48c1",
+  "sha": "016322233dd49f2959060b5560feb14c88c85f38",
   "revisions": [
+    {
+      "sha": "016322233dd49f2959060b5560feb14c88c85f38",
+      "short": "0163222",
+      "message": "so i am going to try to not auto approve this accidentally",
+      "author": "daniel-coons",
+      "date": "2026-07-31T19:53:14Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "cc3ad976c36aeacc5d7d3e8651832c6cd15a48c1",
       "short": "cc3ad97",
@@ -895,15 +904,6 @@
       "dep_only": false
     },
     {
-      "sha": "565141022e094c39ff77a7914df2c6b36a5548b7",
-      "short": "5651410",
-      "message": "Populate-history: filter revision picker to LabVIEW code + add search (4.4.13)",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T16:04:59Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
       "sha": "00839e49ffd3f8c73e18bb4b4d67a6df69433359",
       "short": "00839e4",
       "message": "Keep example VIPC in Linux-proven artifact shape (v3.39.3)",
@@ -1085,7 +1085,7 @@
     }
   ],
   "config": {
-    "use": "latest",
+    "use": "",
     "actions": {},
     "vipc": [],
     "dragon": [],
