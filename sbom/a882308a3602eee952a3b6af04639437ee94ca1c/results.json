@@ -1,0 +1,36 @@
+{
+ "meta": {
+  "sha": "a882308a3602eee952a3b6af04639437ee94ca1c",
+  "short": "a882308",
+  "platform": "windows",
+  "repo": "danielcoons/LabVIEW-CI-with-Containers",
+  "pages_url": "https://danielcoons.github.io/LabVIEW-CI-with-Containers",
+  "dash_url": "https://danielcoons.github.io/LabVIEW-CI-with-Containers/",
+  "labview_version": "2026",
+  "commit": {
+   "message": "changed a VI to test the SBOM workflow trigger",
+   "author": "MIpetrov-NI",
+   "date": "2026-08-07T14:53:08-05:00"
+  },
+  "generated_utc": "2026-08-07 20:10 UTC",
+  "spdx_version": "SPDX-2.3",
+  "created": "2026-08-07T20:09:56Z"
+ },
+ "summary": {
+  "total_packages": 0
+ },
+ "platforms": [
+  {
+   "id": "windows",
+   "url": null
+  },
+  {
+   "id": "linux",
+   "url": "linux/results.json"
+  }
+ ],
+ "packages": [],
+ "tooling": {
+  "missing": []
+ }
+}
