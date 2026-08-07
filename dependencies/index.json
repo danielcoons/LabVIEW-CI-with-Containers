@@ -1,8 +1,26 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "016322233dd49f2959060b5560feb14c88c85f38",
+  "sha": "a882308a3602eee952a3b6af04639437ee94ca1c",
   "revisions": [
+    {
+      "sha": "a882308a3602eee952a3b6af04639437ee94ca1c",
+      "short": "a882308",
+      "message": "changed a VI to test the SBOM workflow trigger",
+      "author": "MIpetrov-NI",
+      "date": "2026-08-07T19:53:08Z",
+      "project": true,
+      "dep_only": false
+    },
+    {
+      "sha": "225dc86ea7d781a6941f9fddfb174a2b4f3f932e",
+      "short": "225dc86",
+      "message": "changed main.vi (added a comment, nuthn special) to test the sbom workflow trigger.",
+      "author": "MIpetrov-NI",
+      "date": "2026-08-07T18:43:44Z",
+      "project": true,
+      "dep_only": false
+    },
     {
       "sha": "016322233dd49f2959060b5560feb14c88c85f38",
       "short": "0163222",
@@ -882,24 +900,6 @@
       "message": "Revision pickers: shared searchable widget that filters to LabVIEW code (4.4.14)",
       "author": "Elijah Kerry",
       "date": "2026-07-21T16:36:25Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "333db43002ac632f7fe172d3ecb6cfe7a00bee5c",
-      "short": "333db43",
-      "message": "Merge pull request #27 from elijah286/fix/deps-pending-version-mismatch",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T16:13:58Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "c187e7c49057b7780c0c068bcee90c8f7fd7b95b",
-      "short": "c187e7c",
-      "message": "dependencies: handle object-shaped dragon payload in generated index",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T16:13:43Z",
       "project": false,
       "dep_only": false
     },
