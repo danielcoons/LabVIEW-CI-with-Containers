@@ -1,8 +1,26 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "34ca150dc89039426f128b89f1010e496e1cba93",
+  "sha": "38a335472926c8d0337c9daa1cfcd63d16ab2a1d",
   "revisions": [
+    {
+      "sha": "38a335472926c8d0337c9daa1cfcd63d16ab2a1d",
+      "short": "38a3354",
+      "message": "pass --allow-missing-files to override",
+      "author": "MIpetrov-NI",
+      "date": "2026-08-10T21:14:41Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "4a14d64ddd9d8a57f1e95a52eb3316b0ff0e0573",
+      "short": "4a14d64",
+      "message": "Should detect LabVIEW version installed in the container, then pass this version to VIPM CLI.",
+      "author": "MIpetrov-NI",
+      "date": "2026-08-10T20:53:03Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "34ca150dc89039426f128b89f1010e496e1cba93",
       "short": "34ca150",
@@ -882,24 +900,6 @@
       "message": "Merge pull request #28 from elijah286/fix/deps-pending-version-mismatch",
       "author": "Elijah Kerry",
       "date": "2026-07-21T17:01:15Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "04f82042da70ffdb2c372a6557a4e60415adc12b",
-      "short": "04f8204",
-      "message": "dependencies: restore rebuild panel and update workflow controls",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T17:00:57Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "323dfe85aec291ca9e895220bdf02854cc693eff",
-      "short": "323dfe8",
-      "message": "reconfigure.yml: fix invalid-workflow-file error (col-0 heredoc) (4.4.15)",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T16:46:32Z",
       "project": false,
       "dep_only": false
     },
