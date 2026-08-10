@@ -1,8 +1,17 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "a882308a3602eee952a3b6af04639437ee94ca1c",
+  "sha": "34ca150dc89039426f128b89f1010e496e1cba93",
   "revisions": [
+    {
+      "sha": "34ca150dc89039426f128b89f1010e496e1cba93",
+      "short": "34ca150",
+      "message": "Error handling: SBOM workflow fails if VIPM CLI errors to avoid generating misleading output files",
+      "author": "MIpetrov-NI",
+      "date": "2026-08-10T19:57:36Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "a882308a3602eee952a3b6af04639437ee94ca1c",
       "short": "a882308",
@@ -891,15 +900,6 @@
       "message": "reconfigure.yml: fix invalid-workflow-file error (col-0 heredoc) (4.4.15)",
       "author": "Elijah Kerry",
       "date": "2026-07-21T16:46:32Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "2e6c84f26ce5d2344b07412d73913a627ef53e30",
-      "short": "2e6c84f",
-      "message": "Revision pickers: shared searchable widget that filters to LabVIEW code (4.4.14)",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T16:36:25Z",
       "project": false,
       "dep_only": false
     },
