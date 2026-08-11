@@ -1,8 +1,17 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "38a335472926c8d0337c9daa1cfcd63d16ab2a1d",
+  "sha": "5f102c241f6b32338e705a02513d701d3ef2d0f1",
   "revisions": [
+    {
+      "sha": "5f102c241f6b32338e705a02513d701d3ef2d0f1",
+      "short": "5f102c2",
+      "message": "Correct CycloneDX SBOM componnet supplier data in the generated report.",
+      "author": "MIpetrov-NI",
+      "date": "2026-08-11T15:52:58Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "38a335472926c8d0337c9daa1cfcd63d16ab2a1d",
       "short": "38a3354",
@@ -891,15 +900,6 @@
       "message": "dependencies: add final approval dialog with per-container diff",
       "author": "Elijah Kerry",
       "date": "2026-07-21T17:32:48Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "c5fbce24c754b7229f1dfcbd53c62540a0a1c4ad",
-      "short": "c5fbce2",
-      "message": "Merge pull request #28 from elijah286/fix/deps-pending-version-mismatch",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T17:01:15Z",
       "project": false,
       "dep_only": false
     },
