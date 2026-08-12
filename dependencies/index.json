@@ -1,8 +1,26 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "8f935e6e3379c89c9e08a86d8514fb05b8daee43",
+  "sha": "50db9eef28e655d9d0e626c7ab8617802bac5788",
   "revisions": [
+    {
+      "sha": "50db9eef28e655d9d0e626c7ab8617802bac5788",
+      "short": "50db9ee",
+      "message": "Merge branch 'main' into main",
+      "author": "Elijah Kerry",
+      "date": "2026-08-12T16:30:35Z",
+      "project": false,
+      "dep_only": false
+    },
+    {
+      "sha": "cb4611eabf47ed066128b7ea5c5d7d794e819d34",
+      "short": "cb4611e",
+      "message": "Skip Pages publishing for fork pull requests",
+      "author": "elijah286",
+      "date": "2026-08-12T16:27:18Z",
+      "project": false,
+      "dep_only": false
+    },
     {
       "sha": "8f935e6e3379c89c9e08a86d8514fb05b8daee43",
       "short": "8f935e6",
@@ -882,24 +900,6 @@
       "message": "dashboard: fix report Re-run preselect (histIdx->histIdxIn) + in-page overlay for Populate history",
       "author": "Elijah Kerry",
       "date": "2026-07-21T19:33:45Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "a782f16015604f2565f95b1bd77aa8b31bf9c328",
-      "short": "a782f16",
-      "message": "deps: remove duplicate repaired VIPC artifacts (#30)",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T18:12:24Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "9a0e1c6251e0c7d5f9f35ec1387fcdae3803602a",
-      "short": "9a0e1c6",
-      "message": "Merge pull request #29 from elijah286/fix/deps-pending-version-mismatch",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T17:33:02Z",
       "project": false,
       "dep_only": false
     },
