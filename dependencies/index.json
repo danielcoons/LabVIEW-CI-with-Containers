@@ -1,8 +1,17 @@
 {
   "schema": 1,
   "repo": "danielcoons/LabVIEW-CI-with-Containers",
-  "sha": "50db9eef28e655d9d0e626c7ab8617802bac5788",
+  "sha": "d2e8e2806db14819bcd5d12b541ed5567ff07a86",
   "revisions": [
+    {
+      "sha": "d2e8e2806db14819bcd5d12b541ed5567ff07a86",
+      "short": "d2e8e28",
+      "message": "Merge pull request #44 from danielcoons/main",
+      "author": "MIpetrov-NI",
+      "date": "2026-08-12T20:24:21Z",
+      "project": true,
+      "dep_only": false
+    },
     {
       "sha": "50db9eef28e655d9d0e626c7ab8617802bac5788",
       "short": "50db9ee",
@@ -891,15 +900,6 @@
       "message": "ci: reconfigure LabVIEW CI settings (#31)",
       "author": "github-actions[bot]",
       "date": "2026-07-21T19:41:19Z",
-      "project": false,
-      "dep_only": false
-    },
-    {
-      "sha": "7722b5fe2c9372f1337c09c84388ab177cfe0538",
-      "short": "7722b5f",
-      "message": "dashboard: fix report Re-run preselect (histIdx->histIdxIn) + in-page overlay for Populate history",
-      "author": "Elijah Kerry",
-      "date": "2026-07-21T19:33:45Z",
       "project": false,
       "dep_only": false
     },
