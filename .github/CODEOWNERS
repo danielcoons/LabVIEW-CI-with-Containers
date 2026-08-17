@@ -20,9 +20,13 @@
 /.github/workflows/discover-clients.yml             @elijah286
 /.github/workflows/integrate-deploy.yml             @elijah286
 
-# The guard that enforces all of the above.
+# The guard that enforces all of the above, and the machinery that derives and
+# publishes versions. Release-note fragments under notes/ are deliberately NOT
+# owned -- they are the one part of the release any contributor should be adding.
 /.github/labview/validate-catalog-source-sync.py    @elijah286
 /.github/labview/promote-release.py                 @elijah286
+/.github/labview/version.py                         @elijah286
+/.github/labview/publish-release.sh                 @elijah286
 
 # The configurator/installer pages clients are served.
 /.github/pages/integrate.html                       @elijah286

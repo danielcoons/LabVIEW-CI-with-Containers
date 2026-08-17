@@ -74,6 +74,23 @@ def parse_version(text: str) -> tuple[int, int, int] | None:
     return (int(match[1]), int(match[2]), int(match[3])) if match else None
 
 
+def published_tag_names() -> set[str]:
+    """Every published version as a bare string ("4.12.4"), empty if tags are unavailable."""
+    try:
+        out = subprocess.run(
+            ["git", "tag", "--list", "v*.*.*"],
+            cwd=ROOT, capture_output=True, text=True, timeout=30, check=True,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return set()
+    names = set()
+    for line in out.stdout.splitlines():
+        tag = line.strip()
+        if SEMVER_TAG.match(tag):
+            names.add(tag[1:])
+    return names
+
+
 def highest_published_version() -> tuple[tuple[int, int, int], str] | None:
     """Highest v<MAJOR>.<MINOR>.<PATCH> tag in this clone, or None if unknown.
 
@@ -168,6 +185,27 @@ def main() -> int:
                 "nothing, and leave the v<major> alias stranded on the newer release. "
                 f"Set version to something above {published[1].lstrip('v')} (and add a "
                 "matching history.releases[0] entry)."
+            )
+
+    # Channel pointers must name a version that was actually PUBLISHED, not merely
+    # written into the catalog. promote-release.yml used to bump the catalog and
+    # rely on release.yml to tag it, but GITHUB_TOKEN pushes do not trigger
+    # workflows -- so 4.10.2, 4.10.3 and 4.11.11 were announced and never tagged,
+    # and the `beta` tag sat on v4.11.8 for three weeks while betaVersion said
+    # 4.11.10. Pointing a channel at an untagged version strands every client on
+    # that channel, so it is worth failing over.
+    tagged = published_tag_names()
+    for tier in ("stableVersion", "betaVersion"):
+        pointer = (catalog.get(tier) or "").strip()
+        if not pointer:
+            continue
+        if parse_version(pointer) is None:
+            failures.append(f"{tier} {pointer!r} is not MAJOR.MINOR.PATCH")
+        elif tagged and pointer not in tagged:
+            failures.append(
+                f"{tier} points at {pointer}, which has no v{pointer} tag. A channel "
+                "must name a published release; clients on that channel would resolve "
+                "to a version that does not exist."
             )
 
     capabilities = catalog.get("capabilities") or []
