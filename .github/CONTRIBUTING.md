@@ -23,23 +23,43 @@ The configurator now refuses this, and `catalog-source-sync` fails the PR if the
 source-only files go missing. **To test the pipeline, install it into a separate
 scratch repository.**
 
-## `catalog.json` is the version of record
+## Never edit `catalog.json`
 
-`.github/labview-ci/catalog.json` → `version` is what `release.yml` reads to cut
-the `v<MAJOR>.<MINOR>.<PATCH>` tag and force-move the `v<MAJOR>` alias that every
-client pins to. It is release machinery, not a config file.
+`.github/labview-ci/catalog.json` → `version` is the version of record: the
+release workflow reads it to cut the `v<MAJOR>.<MINOR>.<PATCH>` tag and force-move
+the `v<MAJOR>` alias every client pins to. It is release machinery, not a config
+file, and **CI owns it**. You should never have it open.
 
-- **Never hand-edit it on a feature branch**, and never resolve a conflict in it
-  by taking your side. If your branch's copy is older than main's, take main's.
-- The version must only ever go **up**. `catalog-source-sync` compares it against
-  the highest published `v*` tag and fails the PR if it moves backwards.
-- `version` must equal `history.releases[0].version`, so a bump means adding a
-  history entry too.
-- Patch for fixes, minor for a new capability, major for a breaking change.
+Every merge to main is published automatically. CI derives the next version from
+the highest published **tag** — never from the file — so a stale or conflicted
+catalog cannot roll the version backwards. That's deliberate: on 2026-07-30 a
+hand-edited copy took the version from 4.12.4 to 4.11.10 and stalled every client
+release for two weeks.
 
-A downgrade fails quietly if it gets through: `release.yml` finds the tag already
-exists, publishes nothing, and leaves the alias stranded on the newer release. It
-looks like a green build.
+What you supply instead, both optional:
+
+**A release note.** Drop a `.md` file in `.github/labview-ci/notes/` describing
+your change in prose, as a client would read it. One file per PR, so two PRs can
+never conflict. CI folds pending fragments into the release and deletes them. See
+[the notes README](labview-ci/notes/README.md). Forget one and the release still
+happens, falling back to your PR title.
+
+**A bump level.** Label the PR `release:minor` for a new capability or
+`release:major` for a breaking change. No label means patch, which is right most
+of the time. Major moves `@v<major>`, so it should be rare.
+
+To land something without publishing, put `[skip release]` in the merge commit
+message — but use it sparingly. Everything being published is what makes
+retroactive promotion to beta and stable work.
+
+## Channels, not version numbers, carry risk
+
+Publishing is automatic and unconditional. Deciding a version is *good* is a
+separate, manual, retroactive act: `promote-release.yml` moves the rolling
+`stable` and `beta` tags to an already-published release. Nothing is rebuilt.
+
+So don't agonise over a version number — it's a counter. The thing that decides
+what a client actually receives is which release the channel points at.
 
 ## Reverts
 
