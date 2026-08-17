@@ -9,6 +9,15 @@ source:
 config:
   labviewVersion: "2026"
   os: [windows, linux]
+<<<<<<< HEAD
+=======
+  concurrency:
+    maxParallel: 5
+  container:
+    use: latest
+  viAnalyzer:
+    default: "example/via-inplace-proof.viancfg"
+>>>>>>> upstream/diag/via-inplace
 activities:
   - dashboard
   - masscompile
